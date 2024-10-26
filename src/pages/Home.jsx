@@ -4,7 +4,8 @@ import logo from "../assets/logo/logo.svg";
 const Home = () => {
   return (
     <div>
-      <div class="">
+      <div className="">
+  
         <div>
           <img  src={logo} alt="logo" />
           <span className="border">Personal</span>
