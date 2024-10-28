@@ -2,7 +2,12 @@ import logo from "../assets/logo/logo.svg";
 import imageOrang from "../assets/images/orang.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import Typography from "@mui/material/Typography";
-
+// icon import
+import {Box,IconButton} from "@mui/material"
+import ChatIcon from "@mui/icons-material/Chat";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import RedditIcon from "@mui/icons-material/Reddit";
+import TwitterIcon from "@mui/icons-material/Twitter"
 
 
 const Home = () => {
@@ -56,7 +61,21 @@ const Home = () => {
             </p>
           </div>
           <div className="icon ">
-
+            <Box >
+              <IconButton
+                sx={{
+                  width: 48,
+                  height: 48,
+                  backgroundColor: "black",
+                  color: "white",
+                  "&:hover": {
+                    backgroundColor:"black"
+                  }
+                }}
+              >
+                  
+              </IconButton>
+            </Box>
           </div>
         </div>
       </div>
