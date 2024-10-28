@@ -4,13 +4,19 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Typography from "@mui/material/Typography";
 // icon import
 import {Box,IconButton} from "@mui/material"
-import ChatIcon from "@mui/icons-material/Chat";
+
 import FacebookIcon from "@mui/icons-material/Facebook";
 import RedditIcon from "@mui/icons-material/Reddit";
 import TwitterIcon from "@mui/icons-material/Twitter"
 
 
+
+const DiscordIcon = () => <img src="https://img.icons8.com/?size=100&id=86955&format=png&color=000000" alt="discord Icon" />
+
 const Home = () => {
+
+  // const DiscordIcon = 'https://img.icons8.com/?size=100&id=86955&format=png&color=000000';
+
   return (
     <div>
       <div className="flex justify-between border border-y-orange-900 p-3">
@@ -61,7 +67,7 @@ const Home = () => {
             </p>
           </div>
           <div className="icon ">
-            <Box >
+            <Box display="inline-flex" alignItems="start" gap={2} px={0} py={1} >
               <IconButton
                 sx={{
                   width: 48,
@@ -73,9 +79,44 @@ const Home = () => {
                   }
                 }}
               >
-                  
+                <FacebookIcon/>
+              </IconButton>
+              <IconButton
+                sx={{
+                  width: 48,
+                  height: 48,
+                  border: 2,
+                  borderColor: "black",
+                  borderRadius: 1,
+                  color:"black"
+              }}>
+                <RedditIcon/>
+              </IconButton>
+              <IconButton sx={{
+                width: 48,
+                height: 48,
+                border: 2,
+                borderColor: "black",
+                borderRadius: 1,
+                color:"black"
+              }}>
+               <DiscordIcon/>
+              </IconButton>
+              <IconButton sx={{
+                width: 48,
+                height: 48,
+                border: 2,
+                borderColor: "black",
+                borderRadius: 1,
+                color:"black"
+              }}>
+                <TwitterIcon/>
               </IconButton>
             </Box>
+          </div>
+          <div className="skills pt-20 pb-10">
+            <p className="text-2xl">My <span className="font-extrabold">Skills</span></p>
+            
           </div>
         </div>
       </div>
