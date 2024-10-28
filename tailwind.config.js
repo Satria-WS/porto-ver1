@@ -4,8 +4,20 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      textStrokeWidth: {
+        '1.4': '1.4px'
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-stroke-1-4': {
+          '-webkit-text-stroke-width': '1.4px'
+        }
+      })
+    }
+  ],
 }
 
