@@ -4,10 +4,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Typography from "@mui/material/Typography";
 // icon import
 import { Box, IconButton, Grid2, Paper } from "@mui/material";
-
 import FacebookIcon from "@mui/icons-material/Facebook";
 import RedditIcon from "@mui/icons-material/Reddit";
 import TwitterIcon from "@mui/icons-material/Twitter";
+//logo google
+import GoogleLogo from "../assets/icon/google.svg";
 
 const DiscordIcon = () => (
   <img
@@ -123,23 +124,150 @@ const Home = () => {
           </div>
           {/* SKILLS */}
           <div className="skills pt-20 pb-10">
-            <p className="text-2xl">
+            <p className="text-2xl text-center">
               My <span className="font-extrabold">Skills</span>
             </p>
-            <Grid2 container spacing={2}>
-              <Grid2 size={8}>
-                <span>size=8</span>
+
+            <Grid2 container spacing={2} display={"flex"} alignItems={"center"}>
+              <Grid2 size={6}>
+                <Paper
+                  sx={{
+                    p: 3,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    border: 2,
+                    borderColor: "primary.main",
+                    borderRadius: 1,
+                    bgcolor: "background.paper",
+                  }}
+                >
+                  JS
+                  {/* Placeholder for Icon Express */}
+                  <Typography variant="h5" sx={{ mt: 2 }}>
+                    Javascript
+                  </Typography>
+                </Paper>
               </Grid2>
-              <Grid2 size={4}>
-                <span>size=4</span>
+              <Grid2 size={6}>
+                <Paper
+                  sx={{
+                    p: 3,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    border: 2,
+                    borderColor: "primary.main",
+                    borderRadius: 1,
+                    bgcolor: "background.paper",
+                  }}
+                >
+                  JS
+                  {/* Placeholder for Icon Express */}
+                  <Typography variant="h5" sx={{ mt: 2 }}>
+                    Javascript
+                  </Typography>
+                </Paper>
               </Grid2>
-              <Grid2 size={4}>
-                <span>size=4</span>
+              <Grid2 size={6}>
+                <Paper
+                  sx={{
+                    p: 3,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    border: 2,
+                    borderColor: "primary.main",
+                    borderRadius: 1,
+                    bgcolor: "background.paper",
+                  }}
+                >
+                  JS
+                  {/* Placeholder for Icon Express */}
+                  <Typography variant="h5" sx={{ mt: 2 }}>
+                    Javascript
+                  </Typography>
+                </Paper>
               </Grid2>
-              <Grid2 size={8}>
-                <span>size=8</span>
+              <Grid2 size={6}>
+                <Paper
+                  sx={{
+                    p: 3,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    border: 2,
+                    borderColor: "primary.main",
+                    borderRadius: 1,
+                    bgcolor: "background.paper",
+                  }}
+                >
+                  JS
+                  {/* Placeholder for Icon Express */}
+                  <Typography variant="h5" sx={{ mt: 2 }}>
+                    Javascript
+                  </Typography>
+                </Paper>
+              </Grid2>
+              <Grid2 size={6}>
+                <Paper
+                  sx={{
+                    p: 3,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    border: 2,
+                    borderColor: "primary.main",
+                    borderRadius: 1,
+                    bgcolor: "background.paper",
+                  }}
+                >
+                  JS
+                  {/* Placeholder for Icon Express */}
+                  <Typography variant="h5" sx={{ mt: 2 }}>
+                    Javascript
+                  </Typography>
+                </Paper>
+              </Grid2>
+              <Grid2 size={6}>
+                <Paper
+                  sx={{
+                    p: 3,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    border: 2,
+                    borderColor: "primary.main",
+                    borderRadius: 1,
+                    bgcolor: "background.paper",
+                  }}
+                >
+                  JS
+                  {/* Placeholder for Icon Express */}
+                  <Typography variant="h5" sx={{ mt: 2 }}>
+                    Javascript
+                  </Typography>
+                </Paper>
               </Grid2>
             </Grid2>
+          </div>
+          {/* experience */}
+
+          <div className="w-full bg-black">
+            <h1 className="text-white text-2xl text-center p-10">
+              <span>My </span>
+              <span className="font-extrabold">Experience</span>
+            </h1>
+            <div className="border border-r-indigo-600 text-white rounded-md">
+              <div className="title flex justify-center gap-5 ">
+                <img className="pr-4" src={GoogleLogo} alt="google" />
+                <div className="text-[#FFFFFF] text-xl w-full max-w-[233px]">
+                  Lead Software Engineer At Google
+                </div>
+              </div>
+              <span className="date text-[#D4D4D8]">Nov 2019 - Present</span>
+              <div className="content"></div>
+            </div>
           </div>
         </div>
       </div>
