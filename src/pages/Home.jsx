@@ -11,14 +11,18 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GoogleLogo from "../assets/logo/google.svg";
 import YoutubeLogo from "../assets/logo/youtube.svg";
 import AppleLogo from "../assets/logo/apple.svg";
-//image
+// projectImg
 import aboutMe from "../assets/images/aboutme.png";
 import project_1 from "../assets/images/project-1.png";
 import project_2 from "../assets/images/project-2.png";
 import project_3 from "../assets/images/project-3.png";
 // externalLink
 import extenalLink from "../assets/icon/external-link.svg";
-// projectImg
+// TestiImg
+import Testi_1 from "../assets/images/Testi-1.svg";
+import Testi_2 from "../assets/images/Testi-2.svg";
+import QMark_White from "../assets/images/Q-Mark-White.svg";
+import QMark_Black from "../assets/images/Q-Mark-Black.svg";
 
 const DiscordIcon = () => (
   <img
@@ -378,7 +382,6 @@ const Home = () => {
                     fontWeight: "600",
                   }}
                 >
-                  {" "}
                   Crypto Screener Application
                 </Typography>
                 <p className=" text-[#71717A] py-5">
@@ -395,7 +398,7 @@ const Home = () => {
               <img src={project_2} alt="project-1" />
               <div className="py-5">
                 <Typography className="py-4" variant="h4">
-                  <span className="font-semibold">01</span>
+                  <span className="font-semibold">02</span>
                 </Typography>
                 <Typography
                   variant="h4"
@@ -403,7 +406,7 @@ const Home = () => {
                     fontWeight: "600",
                   }}
                 >
-                  Crypto Screener Application
+                  Euphoria - Ecommerce (Apparels) Website Template
                 </Typography>
                 <p className=" text-[#71717A] py-5">
                   I'm Evren Shah Lorem Ipsum is simply dummy text of the
@@ -419,7 +422,7 @@ const Home = () => {
               <img src={project_3} alt="project-1" />
               <div className="py-5">
                 <Typography className="py-4" variant="h4">
-                  <span className="font-semibold">01</span>
+                  <span className="font-semibold">03</span>
                 </Typography>
                 <Typography
                   variant="h4"
@@ -427,7 +430,7 @@ const Home = () => {
                     fontWeight: "600",
                   }}
                 >
-                  Crypto Screener Application
+                  Blog Website Template
                 </Typography>
                 <p className=" text-[#71717A] py-5">
                   I'm Evren Shah Lorem Ipsum is simply dummy text of the
@@ -439,7 +442,191 @@ const Home = () => {
                 <img className="w-7" src={extenalLink} alt="link" />
               </div>
             </div>
-
+          </div>
+          {/* Testimonial */}
+          <div className="p-5">
+            <div>
+              <Typography className="py-5" variant="h4">
+                My <span className="font-extrabold">Testimonial</span>
+              </Typography>
+              {/* Testi Icon */}
+              <div className=" flex flex-col justify-center items-center shadow-custom rounded-3xl p-3">
+                <div className="border flex-col border-slate-500 flex justify-center items-center">
+                  <div className="relative border border-x-purple-500">
+                    <img
+                      className="border border-slate-500"
+                      src={Testi_1}
+                      alt="icon-1"
+                    />
+                    <div className="absolute bottom-0 right-0 bg-black w-full max-h max-w-8 h-8 p-2  rounded-full flex">
+                      <img
+                        className="bottom-0 right-0"
+                        src={QMark_White}
+                        alt="QM-Black"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p className="text-center w-full py-6">
+                  I recently had to jump on 10+ different calls across eight
+                  different countries to find the right owner.
+                </p>
+                <div className="bg-black w-[120px] h-[2px]"></div>
+                <p className="text-[#404040] text-xl font-semibold py-6">
+                  Evren Shah
+                </p>
+                <p className="text-[#71717A] font-semibold pb-3">Designer</p>
+              </div>
+              <div className=" bg-black flex flex-col justify-center items-center shadow-custom rounded-3xl p-3 mt-10">
+                <div className="border flex-col border-slate-500 flex justify-center items-center">
+                  <div className="relative border border-x-purple-500">
+                    <img
+                      className="border border-slate-500"
+                      src={Testi_2}
+                      alt="icon-1"
+                    />
+                    <div className="absolute bottom-0 right-0 bg-white w-full max-h max-w-8 h-8 p-2  rounded-full flex">
+                      <img
+                        className="bottom-0 right-0"
+                        src={QMark_Black}
+                        alt="QM-Black"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p className="text-white text-center w-full py-6">
+                  I recently had to jump on 10+ different calls across eight
+                  different countries to find the right owner.
+                </p>
+                <div className="bg-white w-[120px] h-[2px]"></div>
+                <p className="text-white text-xl font-semibold py-6">
+                  Evren Shah
+                </p>
+                <p className="text-white font-semibold pb-3">Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Form */}
+      <div>
+        <div className="text-2xl font-extrabold">
+          <span className="">Let’s</span>&nbsp;
+          <Typography
+            sx={{
+              fontSize: "28px",
+              fontWeight: "bold",
+              color: "transparent",
+              WebkitTextStroke: "1px #000000",
+              display: "inline-block",
+            }}
+          >
+            Talk
+          </Typography>
+        </div>
+        <form className="">
+          <div className="p-3">
+            <input
+              className="w-full py-4 px-6 rounded-sm border-[1.4px] border-black"
+              placeholder="Your name"
+            />
+          </div>
+          <div className="p-3">
+            <input
+              className="w-full py-4 px-6 rounded-sm border-[1.4px] border-black"
+              placeholder="Email"
+            />
+          </div>
+          <div className="p-3">
+            <input
+              className="w-full py-4 px-6 rounded-sm border-[1.4px] border-black"
+              placeholder="Your Website"
+            />
+          </div>
+          <div className="p-3">
+            {/* <input
+              className="w-full py-4 px-6 rounded-sm border-[1.4px] border-black"
+              placeholder="How can I help"
+            /> */}
+            <textarea
+              className=" py-4 px-6 rounded-sm border-[1.4px] border-black resize-none w-full"
+              placeholder="How can I help"
+              rows={5}
+            />
+          </div>
+          <button className="p-3 bg-black text-white rounded-sm ml-3">
+            Get In Touch
+          </button>
+        </form>
+        <div className="icon p-5 ">
+          <Box display="inline-flex" alignItems="start" gap={2} px={0} py={1}>
+            <IconButton
+              sx={{
+                width: 48,
+                height: 48,
+                backgroundColor: "black",
+                color: "white",
+                "&:hover": {
+                  backgroundColor: "black",
+                },
+              }}
+            >
+              <FacebookIcon />
+            </IconButton>
+            <IconButton
+              sx={{
+                width: 48,
+                height: 48,
+                border: 2,
+                borderColor: "black",
+                borderRadius: 1,
+                color: "black",
+              }}
+            >
+              <RedditIcon />
+            </IconButton>
+            <IconButton
+              sx={{
+                width: 48,
+                height: 48,
+                border: 2,
+                borderColor: "black",
+                borderRadius: 1,
+                color: "black",
+              }}
+            >
+              <DiscordIcon />
+            </IconButton>
+            <IconButton
+              sx={{
+                width: 48,
+                height: 48,
+                border: 2,
+                borderColor: "black",
+                borderRadius: 1,
+                color: "black",
+              }}
+            >
+              <TwitterIcon />
+            </IconButton>
+          </Box>
+        </div>
+        <div className="text-xl font-bold pl-5">
+          <p>YourEmail@gmail.com</p>
+          <p className="py-2">628 - XXXXXXXXX</p>
+        </div>
+        <div className="footer bg-slate-500 p-4">
+          <div className=" flex justify-between border border-y-orange-900">
+            <div className="flex items-center">
+              <img src={logo} alt="logo" />
+              <p className=" text-white text-xl font-semibold tracking-tight">
+                Personalx
+              </p>
+            </div>
+            <div className="text-white">
+              <p>@ 2019-2023 Personal</p>
+              <p className="text-right">Made in Figma</p>
+            </div>
           </div>
         </div>
       </div>
