@@ -38,6 +38,7 @@ const Home = () => {
 
   return (
     <div>
+      {/* Header */}
       <div className="flex justify-between border border-y-orange-900 p-3">
         <div className="flex border border-y-orange-900 items-center">
           <img src={logo} alt="logo" />
