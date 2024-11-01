@@ -62,13 +62,17 @@ const Home = () => {
       <div className="flex flex-col  justify-center items-center min-w-[300px] ">
         {/* content */}
         <div className="Biography  flex flex-col items-center py-10">
-          <div className="flex flex-col items-center">
-            <div className="orang max-w-[300px] ">
-              <img src={imageOrang} alt="orang" />
+          <div className="w-full  flex flex-col lg:flex-row items-center">
+            <div className="orang  lg:order-2 flex-1">
+              <img
+                className="w-full lg:max-w-[500px]"
+                src={imageOrang}
+                alt="orang"
+              />
               <div className="w-[95%] bg-black h-[2px] m-auto"></div>
             </div>
-            <div className="">
-              <div className="flex flex-col justify-center items-center title text-2xl tracking-tight py-10">
+            <div className="  p-10 flex-1">
+              <div className="flex flex-col justify-center items-center lg:items-start title text-2xl tracking-tight py-5">
                 <p>
                   Hello I’am
                   <span className="font-extrabold pl-3">Evren Shah.</span>
@@ -94,8 +98,8 @@ const Home = () => {
                   Based In <span className="font-extrabold pl-3">India.</span>
                 </p>
               </div>
-              <div className="content pb-10">
-                <p className="px-10">
+              <div className="content pb-10 lg:max-w-[500px]">
+                <p className="">
                   I'm Evren Shah Lorem Ipsum is simply dummy text of the
                   printing and typesetting industry. Lorem Ipsum has been the
                   industry's standard dummy text ever since the 1500s, when an
@@ -103,62 +107,68 @@ const Home = () => {
                   specimen book.
                 </p>
               </div>
+              <div className="icon flex flex-col items-center lg:items-start ">
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  gap={2}
+                  px={0}
+                  py={1}
+                >
+                  <IconButton
+                    sx={{
+                      width: 48,
+                      height: 48,
+                      backgroundColor: "black",
+                      color: "white",
+                      "&:hover": {
+                        backgroundColor: "black",
+                      },
+                    }}
+                  >
+                    <FacebookIcon />
+                  </IconButton>
+                  <IconButton
+                    sx={{
+                      width: 48,
+                      height: 48,
+                      border: 2,
+                      borderColor: "black",
+                      borderRadius: 1,
+                      color: "black",
+                    }}
+                  >
+                    <RedditIcon />
+                  </IconButton>
+                  <IconButton
+                    sx={{
+                      width: 48,
+                      height: 48,
+                      border: 2,
+                      borderColor: "black",
+                      borderRadius: 1,
+                      color: "black",
+                    }}
+                  >
+                    <DiscordIcon />
+                  </IconButton>
+                  <IconButton
+                    sx={{
+                      width: 48,
+                      height: 48,
+                      border: 2,
+                      borderColor: "black",
+                      borderRadius: 1,
+                      color: "black",
+                    }}
+                  >
+                    <TwitterIcon />
+                  </IconButton>
+                </Box>
+              </div>
             </div>
           </div>
 
-          <div className="icon ">
-            <Box display="inline-flex" alignItems="start" gap={2} px={0} py={1}>
-              <IconButton
-                sx={{
-                  width: 48,
-                  height: 48,
-                  backgroundColor: "black",
-                  color: "white",
-                  "&:hover": {
-                    backgroundColor: "black",
-                  },
-                }}
-              >
-                <FacebookIcon />
-              </IconButton>
-              <IconButton
-                sx={{
-                  width: 48,
-                  height: 48,
-                  border: 2,
-                  borderColor: "black",
-                  borderRadius: 1,
-                  color: "black",
-                }}
-              >
-                <RedditIcon />
-              </IconButton>
-              <IconButton
-                sx={{
-                  width: 48,
-                  height: 48,
-                  border: 2,
-                  borderColor: "black",
-                  borderRadius: 1,
-                  color: "black",
-                }}
-              >
-                <DiscordIcon />
-              </IconButton>
-              <IconButton
-                sx={{
-                  width: 48,
-                  height: 48,
-                  border: 2,
-                  borderColor: "black",
-                  borderRadius: 1,
-                  color: "black",
-                }}
-              >
-                <TwitterIcon />
-              </IconButton>
-            </Box>
-          </div>
           {/* SKILLS */}
           <div className="skills pt-20 pb-10">
             <p className="text-2xl text-center">
