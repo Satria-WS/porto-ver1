@@ -7,6 +7,7 @@ import { Box, IconButton, Grid2, Paper } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import RedditIcon from "@mui/icons-material/Reddit";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import Download from "../assets/icon/download.svg";
 //logo google
 import GoogleLogo from "../assets/logo/google.svg";
 import YoutubeLogo from "../assets/logo/youtube.svg";
@@ -44,7 +45,16 @@ const Home = () => {
           <img src={logo} alt="logo" />
           <span className="text-xl font-bold tracking-tight">Personalx</span>
         </div>
-        <MenuIcon fontSize="large" />
+        <div className="flex items-center">
+          <ul className="flex gap-5 font-semibold hidden sm:inline-flex">
+            <li>About Me</li>
+            <li>Skills</li>
+            <li>Project</li>
+            <li>Contact Me</li>
+          </ul>
+        </div>
+        <MenuIcon className="sm:!hidden " fontSize="large" />
+        <button className="text-white bg-black p-3 hidden sm:block">Resume <img className="inline-block pl-3" src={Download} alt="download"/> </button>
       </div>
       <div className="flex flex-col justify-center items-center min-w-[300px] ">
         <div className="orang max-w-[300px]">
