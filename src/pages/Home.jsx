@@ -54,48 +54,55 @@ const Home = () => {
           </ul>
         </div>
         <MenuIcon className="sm:!hidden " fontSize="large" />
-        <button className="text-white bg-black p-3 hidden sm:block">Resume <img className="inline-block pl-3" src={Download} alt="download"/> </button>
+        <button className="text-white bg-black p-3 hidden sm:block">
+          <span>Resume</span>
+          <img className="inline-block pl-3" src={Download} alt="download" />
+        </button>
       </div>
-      <div className="flex flex-col justify-center items-center min-w-[300px] ">
-        <div className="orang max-w-[300px]">
-          <img src={imageOrang} alt="orang" />
-          <div className="w-[95%] bg-black h-[2px] m-auto"></div>
-        </div>
+      <div className="flex flex-col  justify-center items-center min-w-[300px] ">
+        {/* content */}
         <div className="Biography  flex flex-col items-center  py-10  ">
-          <div className="title text-2xl tracking-tight">
-            <p>
-              Hello I’am
-              <span className="font-extrabold pl-3">Evren Shah.</span>
-            </p>
-            <p>
-              <span className="font-extrabold pr-3">Frontend</span>
-              <span>
-                <Typography
-                  sx={{
-                    fontSize: "28px",
-                    fontWeight: "bold",
-                    color: "transparent",
-                    WebkitTextStroke: "1px #000000",
-                    fontFamily: "Arial, sans-serif",
-                    display: "inline-block",
-                  }}
-                >
-                  Developer
-                </Typography>
-              </span>
-            </p>
-            <p>
-              Based In <span className="font-extrabold pl-3">India.</span>
-            </p>
+          <div className="orang max-w-[300px]">
+            <img src={imageOrang} alt="orang" />
+            <div className="w-[95%] bg-black h-[2px] m-auto"></div>
           </div>
-          <div className="content py-5">
-            <p className="px-10">
-              I'm Evren Shah Lorem Ipsum is simply dummy text of the printing
-              and typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, when an unknown printer
-              took a galley of type and scrambled it to specimen book.
-            </p>
+          <div className="">
+            <div className="flex flex-col justify-center items-center title text-2xl tracking-tight py-10">
+              <p>
+                Hello I’am
+                <span className="font-extrabold pl-3">Evren Shah.</span>
+              </p>
+              <p>
+                <span className="font-extrabold pr-3">Frontend</span>
+                <span>
+                  <Typography
+                    sx={{
+                      fontSize: "28px",
+                      fontWeight: "bold",
+                      color: "transparent",
+                      WebkitTextStroke: "1px #000000",
+                      fontFamily: "Arial, sans-serif",
+                      display: "inline-block",
+                    }}
+                  >
+                    Developer
+                  </Typography>
+                </span>
+              </p>
+              <p>
+                Based In <span className="font-extrabold pl-3">India.</span>
+              </p>
+            </div>
+            <div className="content py-5">
+              <p className="px-10">
+                I'm Evren Shah Lorem Ipsum is simply dummy text of the printing
+                and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to specimen book.
+              </p>
+            </div>
           </div>
+
           <div className="icon ">
             <Box display="inline-flex" alignItems="start" gap={2} px={0} py={1}>
               <IconButton
@@ -347,7 +354,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <p className="text-center w-full py-6">
+                <p className="text-center w-full py-6 max-w-96">
                   I recently had to jump on 10+ different calls across eight
                   different countries to find the right owner.
                 </p>
@@ -374,7 +381,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <p className="text-white text-center w-full py-6">
+                <p className="text-white text-center w-full py-6 max-w-96">
                   I recently had to jump on 10+ different calls across eight
                   different countries to find the right owner.
                 </p>
