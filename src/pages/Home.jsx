@@ -108,13 +108,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="icon flex flex-col items-center lg:items-start ">
-                <Box
-                  display="flex"
-                  alignItems="center"
-                  gap={2}
-                  px={0}
-                  py={1}
-                >
+                <Box display="flex" alignItems="center" gap={2} px={0} py={1}>
                   <IconButton
                     sx={{
                       width: 48,
